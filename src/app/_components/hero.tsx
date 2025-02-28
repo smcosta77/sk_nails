@@ -35,7 +35,7 @@ export function Hero() {
                         </p>
 
                         <a
-                            href={`https://wa.me/351911508619?text=Olá vim pelo site e gostaria de mais informações`}
+                            href={`https://wa.me/351918803517?text=Olá vim pelo site e gostaria de mais informações`}
                             target='_blank'
                             className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
                             data-aos="fade-up"
