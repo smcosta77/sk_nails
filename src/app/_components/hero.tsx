@@ -2,15 +2,16 @@ import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import dogImg from '../../../public/hero-dog.webp';
 import catImg from '../../../public/cat-hero.png';
+import logoImg from '../../../public/logoimage.png';
 
 export function Hero() {
 
     return (
-        <section className="bg-[#E84C3D] text-white relative overflow-hidden">
+        <section className="bg-[#ee6356] text-white relative overflow-hidden">
 
             <div>
                 <Image
-                    src={dogImg}
+                    src={logoImg}
                     alt='Foto do cachorro'
                     fill
                     sizes='100vw'
@@ -21,16 +22,16 @@ export function Hero() {
             <div className="absolute inset-0 bg-black opacity-30 md:hidden"></div>
 
             <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
-                <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-
+                <article className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center">
+                    {/* Primeiro bloco (Texto e botão) */}
                     <div className="space-y-6">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
                             data-aos="fade-down"
                         >
-                            Seu pet merece cuidado, carinho e atenção especial.
+                            Você merece cuidado, carinho e atenção especial.
                         </h1>
                         <p className="lg:text-lg" data-aos="fade-right">
-                            Oferecemos os melhores serviços para garantir o bem-estar e a felicidade do seu amigo de quatro patas.
+                            Oferecemos os melhores serviços para garantir o bem-estar e felicidade.
                         </p>
 
                         <a
@@ -44,29 +45,19 @@ export function Hero() {
                             Contato via WhatsApp
                         </a>
 
-
                         <div className="mt-8">
                             <p className="text-sm mb-4">
-                                <b className="bg-black text-white px-2 py-1 rounded-md">5%</b> de desconto na primeira compra.
+                                <b className="bg-black text-white px-2 py-1 rounded-md">15%</b> de desconto na primeira atendimento.
                             </p>
-                            <div className="flex mt-4">
-                                <div className="w-32 hidden lg:block">
-                                    <Image
-                                        src={catImg}
-                                        alt='Foto do gato'
-                                        quality={100}
-                                        className="object-fill"
-                                    />
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <div className="hidden md:block h-full relative">
+                    {/* Segundo bloco (Imagem circular) */}
+                    <div className="hidden lg:block w-60 h-60 relative rounded-full overflow-hidden -mt-4">
                         <Image
-                            src={dogImg}
-                            alt='Foto do dog'
-                            className="object-contain"
+                            src={logoImg}
+                            alt="Foto do dog"
+                            className="object-cover"
                             fill
                             sizes="(max-width: 768px) 0vw, 50vw"
                             quality={100}
@@ -76,6 +67,7 @@ export function Hero() {
 
                 </article>
             </div>
+
 
         </section>
     )

@@ -10,22 +10,22 @@ import Image from 'next/image';
 const testimonials = [
   {
     content:
-      "Desde que comecei a levar a Luna para banho e tosa aqui, ela nunca esteve tão feliz! O atendimento é impecável, os profissionais são super cuidadosos e sempre deixam minha peluda linda e cheirosa. Recomendo de olhos fechados!",
+      "Estou encantada com o trabalho de manicure aqui! A atenção aos detalhes, a qualidade do serviço e a higiene são impecáveis. As unhas ficam perfeitas, e o atendimento é super acolhedor. Sem dúvida, encontrei meu lugar para cuidar das minhas unhas.",
     author: "Mariana Souza",
-    role: "Tutora da Luna (Golden Retriever)",
+    role: "💅 Cliente satisfeita com o serviço de Manicure! 💖",
     image: tutor2,
   },
   {
     content:
-      "O serviço de hotel para pets foi uma experiência incrível! Precisei viajar e fiquei tranquilo sabendo que o Thor estava sendo bem cuidado. Recebi fotos e atualizações diárias, e ele voltou para casa super feliz! Sem dúvida, o melhor petshop da região.",
+      "Eu sou muito exigente quando se trata de pedicure, e posso dizer que esse salão superou todas as minhas expectativas. As unhas ficam lindas e bem cuidadas, e o ambiente é sempre agradável. Além disso, o profissionalismo e a atenção que recebo me fazem me sentir especial.",
     author: "Rafael",
-    role: "Tutor do Thor (Bulldog Francês)",
+    role: "🌸 Cliente feliz com o serviço de Pedicure! 🌸",
     image: tutor1,
   },
   {
-    content: "Meus gatos nunca gostaram de sair de casa, mas o atendimento nesse petshop fez toda a diferença. A equipe é muito paciente e cuidadosa, e o serviço de banho especializado para felinos foi maravilhoso! Agora sei onde confiar o cuidado deles.",
+    content: "Fiz a formação de manicure e pedicure e, hoje, posso dizer que foi uma das melhores decisões da minha vida! As aulas foram super práticas, com muito conteúdo relevante. Além de aprender técnicas incríveis, ganhei confiança para começar meu próprio negócio. Estou muito grata ao salão pela excelente formação!",
     author: "Camila fernandes",
-    role: "Tutora da Mel e do Max",
+    role: "🎓 Ex-aluna do curso de Manicure e Pedicure! 💅",
     image: tutor2,
   },
 ]
@@ -46,7 +46,7 @@ export function Testimonials() {
 
   return (
 
-    <section className="bg-[#FFD449] py-16">
+    <section className="bg-[#eed78b] py-16">
       <div className="container mx-auto px-4">
 
         <h2 className="text-4xl font-bold text-center mb-12">Depoimentos dos nossos clientes</h2>

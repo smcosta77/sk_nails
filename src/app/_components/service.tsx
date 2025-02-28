@@ -1,36 +1,36 @@
 "use client"
 
 import useEmblaCarousel from 'embla-carousel-react';
-import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react';
+import { ChevronLeft, SquarePen, ChevronRight, Scissors, Footprints, Syringe, CarTaxiFront, Hotel, Clock, HandCoins } from 'lucide-react';
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
 const services = [
   {
-    title: "Banho & Tosa",
-    description: "Inclui banho com produtos específicos para o tipo de pelagem e pele do animal, corte de unhas, limpeza das orelhas e tosa personalizada (higiênica ou estilizada).",
+    title: "Manicure",
+    description: "✨Suas unhas merecem todo o carinho! 💅 Agende seu horário e venha conferir os nossos serviços de manicure com muito amor e dedicação. 💖 #ManicureComAmor #ClienteFeliz #UnhasPerfeitas",
     duration: "1h",
     price: "$50",
-    icon: <Scissors />,
+    icon: <HandCoins />,
     linkText: 'Olá, vi no site sobre Banho e tosa e gostaria de mais informações.'
   },
   {
-    title: "Consulta Veterinária",
-    description: "Oferece atendimento clínico básico ou especializado para cuidar da saúde do animal. Inclui diagnóstico de doenças, aplicação de vacinas obrigatórias.",
+    title: "Pedicure",
+    description: "🌸 Seus pés merecem cuidado e atenção especial! Agende já seu horário para uma pedicure de qualidade e venha relaxar enquanto cuido de cada detalhe. 💅✨ #PésCuidados #PedicureDeQualidade #CuidandoDeVocê",
     duration: "1h",
     price: "$45",
-    icon: <Syringe />,
+    icon: <Footprints />,
     linkText: 'Olá, vi no site sobre Consulta veterinária e gostaria de mais informações.'
   },
   {
-    title: "Táxi Pet",
-    description: "Serviço de transporte para levar e buscar os pets no petshop, clínicas veterinárias ou outros locais. Ideal para tutores que não têm tempo ou transporte adequado para locomover os animais.",
-    duration: "2h",
+    title: "Formação",
+    description: "Quer aprender a arte da manicure e pedicure e transformar sua paixão em profissão? A minha Formação Profissional de Manicure e Pedicure está com inscrições abertas! 👏Aprenda técnicas incríveis, cuidados essenciais com as unhas, higienização e muito mais! 💖",
+    duration: "48h",
     price: "$80",
-    icon: <CarTaxiFront />,
+    icon: <SquarePen />,
     linkText: 'Olá, vi no site sobre Táxi Pet e gostaria de mais informações.'
   },
   {
-    title: "Hotel para pets",
+    title: "Outro Serviço",
     description: "Serviço de hospedagem para animais de estimação, ideal para quando os tutores precisam viajar ou se ausentar por alguns dias. Os pets ficam acomodados em espaços seguros, confortáveis.",
     duration: "1h",
     price: "$60",
@@ -89,7 +89,7 @@ export function Service() {
                         <span>{item.duration}</span>
                       </div>
                       <a
-                        href={`https://wa.me/351911508619?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
+                        href={`https://wa.me/351918803517?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
                         target='_blank'
                         className="flex items-center justify-center gap-2 hover:bg-red-400 px-4 py-1 rounded-md duration-300"
                       >
