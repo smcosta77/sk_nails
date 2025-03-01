@@ -39,7 +39,11 @@ const services = [
   },
 ]
 
-export function Service() {
+interface ServiceProps {
+  id?: string
+}
+
+export function Service({ id }: ServiceProps) {
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
@@ -60,7 +64,7 @@ export function Service() {
 
   return (
 
-    <section className="bg-white py-16">
+    <section id={id} className="bg-white py-16">
       <div className="container mx-auto px-4">
 
         <h2 className="text-4xl font-bold mb-12">Serviços</h2>

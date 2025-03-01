@@ -4,10 +4,14 @@ import perfilImg from '../../../public/perfilimage1.png';
 import { Check, MapPin } from 'lucide-react';
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
-export function About() {
+interface AboutProps {
+  id?: string;
+}
+
+export function About({ id }: AboutProps) {
 
   return (
-    <section className="bg-[#FDF6ec] py-6">
+    <section id={id} className="bg-[#FDF6ec] py-6">
       <div className="container px-4 mx-auto ">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

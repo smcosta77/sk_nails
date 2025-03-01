@@ -4,10 +4,14 @@ import dogImg from '../../../public/hero-dog.webp';
 import catImg from '../../../public/cat-hero.png';
 import logoImg from '../../../public/logoimage.png';
 
-export function Hero() {
+interface HeroProps {
+    id?: string;
+}
+
+export function Hero({ id }: HeroProps) {
 
     return (
-        <section className="bg-[#ee6356] text-white relative overflow-hidden mt-15">
+        <section id={id} className="bg-[#ee6356] text-white relative overflow-hidden mt-15">
 
             <div>
                 <Image
