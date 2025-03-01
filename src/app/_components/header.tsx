@@ -24,7 +24,7 @@ export function Header() {
           />
         </div>
         {/* Lista de navegação no canto direito */}
-        <ul className="flex items-center gap-3">
+        <ul className="flex items-center gap-5">
           <li>
             <button onClick={() => scrollToSection("inicio")} className="hover:text-gray-300 transition cursor-pointer">
               Início
