@@ -7,7 +7,7 @@ import logoImg from '../../../public/logoimage.png';
 export function Hero() {
 
     return (
-        <section className="bg-[#ee6356] text-white relative overflow-hidden">
+        <section className="bg-[#ee6356] text-white relative overflow-hidden mt-15">
 
             <div>
                 <Image
@@ -24,8 +24,8 @@ export function Hero() {
             <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
                 <article className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center">
                     {/* Primeiro bloco (Texto e botão) */}
-                    <div className="space-y-6">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+                    <div className="space-y-6 mb-3">
+                        <h1 className="text-3xl md:text-4xl  font-bold leading-10"
                             data-aos="fade-down"
                         >
                             Você merece cuidado, carinho e atenção especial.
@@ -45,19 +45,14 @@ export function Hero() {
                             Contato via WhatsApp
                         </a>
 
-                        <div className="mt-8">
-                            <p className="text-sm mb-4">
-                                <b className="bg-black text-white px-2 py-1 rounded-md">15%</b> de desconto na primeira atendimento.
-                            </p>
-                        </div>
                     </div>
 
                     {/* Segundo bloco (Imagem circular) */}
-                    <div className="hidden lg:block w-60 h-60 relative rounded-full overflow-hidden -mt-4">
+                    <div className="hidden lg:block w-60 h-60 relative rounded-full overflow-hidden mb-5">
                         <Image
                             src={logoImg}
                             alt="Foto do dog"
-                            className="object-cover"
+                            className="object-cover "
                             fill
                             sizes="(max-width: 768px) 0vw, 50vw"
                             quality={100}
