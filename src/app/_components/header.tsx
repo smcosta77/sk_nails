@@ -26,32 +26,32 @@ export function Header() {
         {/* Lista de navegação no canto direito */}
         <ul className="flex items-center gap-3">
           <li>
-            <button onClick={() => scrollToSection("inicio")} className="hover:text-gray-300 transition">
+            <button onClick={() => scrollToSection("inicio")} className="hover:text-gray-300 transition cursor-pointer">
               Início
             </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection("sobre")} className="hover:text-gray-300 transition">
+            <button onClick={() => scrollToSection("sobre")} className="hover:text-gray-300 transition cursor-pointer">
               Sobre
             </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection("cursos")} className="hover:text-gray-300 transition">
+            <button onClick={() => scrollToSection("cursos")} className="hover:text-gray-300 transition cursor-pointer">
               Cursos
             </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection("servicos")} className="hover:text-gray-300 transition">
+            <button onClick={() => scrollToSection("servicos")} className="hover:text-gray-300 transition cursor-pointer">
               Serviços
             </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection("depoimentos")} className="hover:text-gray-300 transition">
+            <button onClick={() => scrollToSection("depoimentos")} className="hover:text-gray-300 transition cursor-pointer">
               Depoimentos
             </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection("contatos")} className="hover:text-gray-300 transition">
+            <button onClick={() => scrollToSection("contatos")} className="hover:text-gray-300 transition cursor-pointer">
               Contatos
             </button>
           </li>
